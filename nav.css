@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: url("img/bottle.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.header {
+  background: rgba(185, 160, 110, 0.5);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.main {
+  width: 100%;
+}
+.main #container {
+  border-radius: 15px;
+  margin: 150px 250px;
+  padding: 15px 0;
+  background: rgba(255, 234, 57, 0.3);
+}
+.main #container div {
+  text-align: center;
+}
+.main #container div kbd {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  width: 60px;
+  line-height: 60px;
+  height: 60px;
+  border: 1px solid rgba(68, 11, 36, 0.27);
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0.5px rgba(68, 11, 36, 0.27);
+  background: -webkit-radial-gradient(circle, #fcfff9, #F2F2EA, #F2F2EA);
+  background: -o-radial-gradient(circle, #fcfff9, #F2F2EA, #F2F2EA);
+  background: -moz-radial-gradient(circle, #fcfff9, #F2F2EA, #F2F2EA);
+  background: radial-gradient(circle, #fcfff9, #F2F2EA, #F2F2EA);
+}
+.main #container div kbd:hover {
+  box-shadow: 1px 1px 1px rgba(68, 11, 36, 0.27) inset;
+}
+.main #container div kbd:hover button {
+  visibility: visible;
+}
+.main #container div kbd button {
+  position: absolute;
+  visibility: hidden;
+  right: 2px;
+  bottom: 2px;
+  border-style: none;
+  background: #fffad3;
+}
+.main #container div kbd button:focus {
+  outline: none;
+}
+.main #container div kbd button:hover {
+  background: #ffdf16;
+}
